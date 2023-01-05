@@ -67,6 +67,14 @@ Ans:
 ![Capture1](https://user-images.githubusercontent.com/41982681/202150560-02db29a9-b8a0-4eb5-827b-f045b3a5e5b0.PNG)
 ![Capture3](https://user-images.githubusercontent.com/41982681/202150610-ab449b9f-4069-4e79-be9b-cf23e9465500.PNG)
 
+__Q.5 What is the life cycle method when fragment1 add over fragmet 2 in same screen?__
+Ans: In this case whatever fragment added last into the fragment stack android start that fragment first
+
+![frag](https://user-images.githubusercontent.com/41982681/210847623-4ac99722-ece6-4ec8-bb50-592903596a4e.PNG)
+![fragnent life cycle](https://user-images.githubusercontent.com/41982681/210847642-42507549-d62e-4f0a-9017-508aacedff4d.PNG)
+
+
+
 
          
    
