@@ -54,7 +54,7 @@ liveDataMerger.addSource(liveData2, value -> liveDataMerger.setValue(value));
 In this case you cannot use MutableLiveData but on the other hand if you want to compare data into the first example (where MutableLiveData has been used) then you cannot because you will be unable to use the addSource property (as per class hierarchy).
 
 __Q.3 How to create instance of ViewModel class in Fragment?__
-Ans:
+Ans:<br>
 
 __In Fragment Use:__
 viewModelRoutesFragment = new ViewModelProvider(requireActivity()).get(ViewModelRoutesFragment.class);
@@ -63,7 +63,7 @@ __instead of__
 viewModelRoutesFragment = new ViewModelProvider(this).get(ViewModelRoutesFragment.class);
 
 __Q.4 Difference Between MVP and MVVM Design Patter?.__
-Ans:
+Ans:<br>
 ![Capture1](https://user-images.githubusercontent.com/41982681/202150560-02db29a9-b8a0-4eb5-827b-f045b3a5e5b0.PNG)
 ![Capture3](https://user-images.githubusercontent.com/41982681/202150610-ab449b9f-4069-4e79-be9b-cf23e9465500.PNG)
 
@@ -75,6 +75,7 @@ Ans: In this case whatever fragment added last into the fragment stack android s
 ![fragnent life cycle](https://user-images.githubusercontent.com/41982681/210847642-42507549-d62e-4f0a-9017-508aacedff4d.PNG)
 
 __Q.6 Send data from one fragment to another fragment using interface?__
+
 Ans:
 * add frag1 and another with their tag or id so that we can get them when ever required
 * In this apporach we create one interface in fragment 1.
@@ -83,6 +84,36 @@ Ans:
 * set fragment 1 value to frag 2 method<br>
 Follow Below for more<br>
 https://github.com/darshna22/FragmentBehaviousApp/tree/master
+
+__Q.7 Send data from one fragment to another fragment using viewmodel class?__
+
+Ans:
+* In this approach create sharable viewmodel class and create mutable livedata variable to set value and livedata variable to get set value
+* get this view model instanse in both share and recieve fragment
+* set value to mutable live data variable from share fragment
+* observe frag1 value in frag2 using sharable view model class.<br>
+For more ref plz follow below link:<br>
+https://github.com/darshna22/FragmentBehaviousApp/tree/master
+
+__Q.8 Create view model class instance in fragment?__
+
+Ans:
+![model](https://user-images.githubusercontent.com/41982681/210870932-25b6d6d0-2f2c-438d-a88c-691a730d729c.PNG)
+
+__Q.9 Observe view model class data in fragment?__
+
+Ans:
+![observe](https://user-images.githubusercontent.com/41982681/210871040-8aa17b41-8054-470c-8d46-8d3ee49c4e7f.PNG)
+
+__Q.10 what happens when you create view model class object as normal class like below?__
+__val shareDataViewModel=ShareDataViewModel()__
+
+Ans: In this case this instance will not work observe viewLifecycleOwner<br>
+result observer will not work for view which is observing its value.
+
+
+
+
 
 
 
