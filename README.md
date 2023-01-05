@@ -103,6 +103,17 @@ __val shareDataViewModel=ShareDataViewModel()__<br>
 Ans: In this case this instance will not work observe viewLifecycleOwner<br>
 result observer will not work for view which is observing its value.
 
+__Q.11 what happens when fragment dialog in transparent background comes over another screen/fagment.?__<br>
+Ans: Nothing happens all lifecycle works as they works.<br>
+<p float="left">
+<img src="https://user-images.githubusercontent.com/41982681/210877549-717089bb-38af-4fad-b47b-7eacc866e760.PNG" width="300" height="400"/>
+<img src="https://user-images.githubusercontent.com/41982681/210877576-3fa9716c-929a-412d-8fd1-0bfcaa3a472b.png" width="300" height="400"/>
+</p><br>
+For more ref plz follow below link:<br>
+https://github.com/darshna22/FragmentBehaviousApp/tree/master
+
+
+
 
 
 
