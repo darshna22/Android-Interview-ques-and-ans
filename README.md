@@ -74,6 +74,16 @@ Ans: In this case whatever fragment added last into the fragment stack android s
 ![frag](https://user-images.githubusercontent.com/41982681/210847623-4ac99722-ece6-4ec8-bb50-592903596a4e.PNG)
 ![fragnent life cycle](https://user-images.githubusercontent.com/41982681/210847642-42507549-d62e-4f0a-9017-508aacedff4d.PNG)
 
+__Q.6 Send data from one fragment to another fragment using interface?__
+Ans:
+* add frag1 and another with their tag or id so that we can get them when ever required
+* In this apporach we create one interface in fragment 1.
+* and same interface we implement in activity where thes fragment added
+* get the another fragment instance in activity by findbyId or findByTag in frag1 override method
+* set fragment 1 value to frag 2 method<br>
+Follow Below for more<br>
+https://github.com/darshna22/FragmentBehaviousApp/tree/master
+
 
 
 
