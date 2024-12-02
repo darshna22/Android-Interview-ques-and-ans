@@ -112,6 +112,25 @@ Ans: Nothing happens all lifecycle works as they works.<br>
 For more ref plz follow below link:<br>
 https://github.com/darshna22/FragmentBehaviousApp/tree/master
 
+__Q.11 ViewModel lifecycle and internal working?__
+Ans:
+__Lifecycle__
+A ViewModel's lifecycle begins when its associated UI controller is created and ends when the UI controller is destroyed or removed from the foreground. 
+__Lifecycle methods__
+ViewModels have two main lifecycle methods:
+onCreate(): Called when the ViewModel is first created, this is a good place to initialize data or perform setup tasks. 
+onCleared(): Called when the associated UI controller is destroyed or the ViewModel is no longer in use, this is where cleanup tasks should be performed. 
+__Internal workings__
+ViewModels use ViewModelStore and ViewModelStoreOwner to manage their lifecycle and data retention. 
+__Data sharing__
+Multiple Fragments can share a common ViewModel to communicate and share data. 
+__Configuration changes__
+ViewModels can survive configuration changes, such as screen rotations, and retain data. This means that the UI doesn't need to fetch data again when navigating between activities or following configuration changes. 
+__ViewModelProvider__
+The ViewModelProvider class manages the lifecycle of a ViewModel. It can fetch or create a ViewModel, and will return an existing instance if one already exists within the lifecycle scope. 
+__UI controller__
+Never store a UI controller or Context directly or indirectly in a ViewModel. This can lead to memory leaks. 
+
 
 
 
