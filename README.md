@@ -112,8 +112,8 @@ Ans: Nothing happens all lifecycle works as they works.<br>
 For more ref plz follow below link:<br>
 https://github.com/darshna22/FragmentBehaviousApp/tree/master
 
-__Q.11 ViewModel lifecycle and internal working?__
-Ans:
+__Q.12 ViewModel lifecycle and internal working?__ <br>
+Ans: <br>
 __Lifecycle__ <br>
 A ViewModel's lifecycle begins when its associated UI controller is created and ends when the UI controller is destroyed or removed from the foreground. <br>
 __Lifecycle methods__ <br>
