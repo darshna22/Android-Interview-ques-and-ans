@@ -130,9 +130,7 @@ __ViewModelProvider__ <br>
 The ViewModelProvider class manages the lifecycle of a ViewModel. It can fetch or create a ViewModel, and will return an existing instance if one already exists within the lifecycle scope. <br>
 __UI controller__ <br>
 Never store a UI controller or Context directly or indirectly in a ViewModel. This can lead to memory leaks. <br>
-
-
-
+![Uploading Screenshot from 2024-12-02 18.45.21.png…]()
 
 
 
